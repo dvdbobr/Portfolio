@@ -1,11 +1,34 @@
-import './App.css';
+import React from "react";
 
-function App() {
+// import components
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import Skills from "./components/Skills";
+import Portfolio from "./components/Portfolio";
+import Contact from "./components/Contact";
+import Divider from "./components/Divider";
+import Footer from "./components/Footer";
+
+const App = () => {
   return (
-    <div className="App">
-      <div className="bg-slate-900 w-[300px] h-[300px]">asdsad</div>
-    </div>
+    <>
+      <Header />
+      <Hero />
+      <Portfolio />
+      <Divider
+        title={"Skills"}
+        id={"skills"}
+      />
+      <Skills />
+      <Divider
+        title={"Contact Me"}
+        id={"contact"}
+      />
+
+      <Contact />
+      <Footer />
+    </>
   );
-}
+};
 
 export default App;

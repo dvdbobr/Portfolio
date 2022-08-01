@@ -1,0 +1,9 @@
+.contactActive li:nth-child(4){
+    color:#00ADB5;
+}
+.deactivateLink{
+    color:#fff
+}
+.activeClass{ 
+    color:#00ADB5;
+}

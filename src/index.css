@@ -4,8 +4,7 @@
 
 @layer base {
   body {
-    @apply font-body text-paragraph leading-6 bg-gray-200;/**/
-    /* @apply bg-gradient-to-t from-[#e8198b] to-[#c7eafd]; */
+    @apply font-body text-paragraph leading-6 bg-primary ;
   }
   h1,
   h2,
@@ -16,10 +15,10 @@
     @apply text-white font-primary;
   }
   .section {
-    @apply py-12 lg:py-32;
+    @apply pt-12 lg:pt-12;
   }
   .section-title {
-    @apply text-3xl lg:text-4xl font-medium lg:font-extrabold mb-5;
+    @apply text-3xl lg:text-4xl font-medium lg:font-extrabold ;
   }
   .subtitle {
     @apply text-base text-paragraph mb-16 lg:mb-24 max-w-[520px];

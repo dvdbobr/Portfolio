@@ -32,12 +32,9 @@ const ProjectCard = ({ item }) => {
           </a>
         </div>
       </div>
-      {/* <p className='capitalize text-accent text-sm mb-3'>{item.category}</p> */}
-      {/* <h3 className='text-sm lg:text-2xl font-semibold capitalize mb-3'>{item.name}</h3> */}
-      <h3 className="capitalize text-accent text-lg mb-3">{item.name}</h3>
-      <p className="text-base max-w-md">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit veniam
-        obcaecati ipsam.
+      <h3 className="capitalize text-accent text-xl mb-3">{item.name}</h3>
+      <p className="text-white max-w-md">
+        {item.description}
       </p>
     </div>
   );

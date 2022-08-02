@@ -12,27 +12,27 @@ import {
   import weatherApp from "./assets/img/projects/weatherApp.PNG";
   
   // skills images
-  import SkillImg1 from "./assets/img/skills/html52.png";
-  import SkillImg2 from "./assets/img/skills/css3.png";
-  import SkillImg3 from "./assets/img/skills/tailwind.png";
-  import SkillImg4 from "./assets/img/skills/js.png";
-  import SkillImg5 from "./assets/img/skills/jquery.png";
-  import SkillImg6 from "./assets/img/skills/reactjs2.png";
-  import SkillImg7 from "./assets/img/skills/redux.png";
+  import html5 from "./assets/img/skills/html5.png";
+  import css3 from "./assets/img/skills/css3.png";
+  import tailwind from "./assets/img/skills/tailwind.png";
+  import js from "./assets/img/skills/js.png";
+  import jquery from "./assets/img/skills/jquery.png";
+  import reactjs from "./assets/img/skills/reactjs.png";
+  import redux from "./assets/img/skills/redux.png";
   /*Server */
-  import SkillImg8 from "./assets/img/skills/nodejs.png";
-  import SkillImg9 from "./assets/img/skills/mongodb.png";
-  import SkillImg10 from "./assets/img/skills/mongoose.png";
-  import SkillImg11 from "./assets/img/skills/phpmyadmin.png";
-  import SkillImg12 from "./assets/img/skills/mysql.png";
-  import SkillImg13 from "./assets/img/skills/jwt.png";
+  import nodejs from "./assets/img/skills/nodejs.png";
+  import mongodb from "./assets/img/skills/mongodb.png";
+  import mongoose from "./assets/img/skills/mongoose.png";
+  import phpmyadmin from "./assets/img/skills/phpmyadmin.png";
+  import mysql from "./assets/img/skills/mysql.png";
+  import jwt from "./assets/img/skills/jwt.png";
   /*Mobile */
-  import SkillImg14 from "./assets/img/skills/flutter.png";
-  import SkillImg15 from "./assets/img/skills/dart.png";
-  import SkillImg16 from "./assets/img/skills/cocos.png";
+  import flutter from "./assets/img/skills/flutter.png";
+  import dart from "./assets/img/skills/dart.png";
+  import cocos from "./assets/img/skills/cocos.png";
   /*Other */
-  import SkillImg17 from "./assets/img/skills/github.png";
-  import SkillImg18 from "./assets/img/skills/git.png";
+  import github from "./assets/img/skills/github.png";
+  import git from "./assets/img/skills/git.png";
   
   // navigation
   export const navigation = [
@@ -73,7 +73,7 @@ import {
       id: "1",
       image: ecommerce,
       name: "E-Commerce Clothing Store",
-      category: "UI/UX design",
+      description: "ecommerce clothing store made with MERN stack also used Redux and JWT",
       href:"https://mern-ecommerce-db.herokuapp.com/",
       github:"https://github.com/dvdbobr/mern-Ecommerce",
     },
@@ -81,7 +81,7 @@ import {
       id: "2",
       image: netflixClone,
       name: "Netflix Clone",
-      category: "web development",
+      description: "netflix clone made with TMDB API and React",
       href:"https://netflix-bootcamp-db.netlify.app/",
       github:"https://github.com/dvdbobr/Netflix",
     },
@@ -89,7 +89,7 @@ import {
       id: "3",
       image: weatherApp,
       name: "Weather App",
-      category: "UI/UX design",
+      description: "forecast site made with accuweather API React and Redux",
       href:"https://david-bobritsky-weather-app.herokuapp.com/",
       github:"https://github.com/dvdbobr/Weather-Api",
     },
@@ -98,75 +98,75 @@ import {
   // skill
   export const skills = [
     {
-      image: SkillImg1,
+      image: html5,
       name: "HTML",
     },
     {
-      image: SkillImg2,
+      image: css3,
       name: "CSS",
     },
     {
-      image: SkillImg3,
+      image: tailwind,
       name: "Tailwind",
     },
     {
-      image: SkillImg4,
+      image: js,
       name: "JavaScript",
     },
     {
-      image: SkillImg5,
+      image: jquery,
       name: "Jquery",
     },
     {
-      image: SkillImg6,
+      image: reactjs,
       name: "ReactJS",
     },
     {
-      image: SkillImg7,
+      image: redux,
       name:"Redux"
     },
     {
-      image: SkillImg8,
+      image: nodejs,
       name:"Nodejs"
     },
     {
-      image: SkillImg9,
+      image: mongodb,
       name: "MongoDB"
     },
     {
-      image: SkillImg10,
+      image: mongoose,
       name: "Mongoose"
     },
     {
-      image: SkillImg11,
+      image: phpmyadmin,
       name: "phpMyAdmin"
     },
     {
-      image: SkillImg12,
+      image: mysql,
       name: "MySQL"
     },
     {
-      image: SkillImg13,
+      image: jwt,
       name: "JWT"
     },
     {
-      image: SkillImg14,
+      image: flutter,
       name: "Flutter"
     },
     {
-      image: SkillImg15,
+      image: dart,
       name: "Dart"
     },
     {
-      image: SkillImg16,
+      image: cocos,
       name: "COCOS"
     },
     {
-      image: SkillImg17,
+      image: github,
       name: "github"
     },
     {
-      image: SkillImg18,
+      image: git,
       name: "git"
     },
   ];

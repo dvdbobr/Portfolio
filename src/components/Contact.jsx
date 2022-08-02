@@ -1,8 +1,27 @@
-import React from "react";
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 
 import { contact } from "../data";
 
 const Contact = () => {
+  const form = useRef();
+  const [sentEmail, setSentEmail] = useState(false);
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("gmail", "template_804rx49", form.current, "oTJqfQ10QR1o-e3-l")
+      .then(
+        (result) => {
+          setSentEmail(true);
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  };
   return (
     <section className="section bg-tertiary">
       <div className="container mx-auto ">
@@ -15,7 +34,7 @@ const Contact = () => {
                   <div className="text-accent  w-14 h-14 flex items-start justify-center mt-2 mb-4 lg:mb-0 text-2xl">
                     {icon}
                   </div>
-                  <div className='px-4'>
+                  <div className="px-4">
                     <h4 className="font-body text-xl ">{title}</h4>
                     <p className="text-accent font-normal ">{description}</p>
                   </div>
@@ -23,20 +42,48 @@ const Contact = () => {
               );
             })}
           </div>
-          <form className="space-y-8 w-full max-w-[780px]">
-            <div className="flex gap-8">
-              <input className="input" type="text" placeholder="Your name" />
-              <input className="input" type="email" placeholder="Your email" />
+          {sentEmail ? (
+            <div className="space-y-8 w-full  max-w-[780px]">
+              <h1 className="text-white text-center text-4xl">
+                Thank you for contacting me!
+              </h1>
             </div>
-            <input className="input" type="text" placeholder="Subject" />
-            <textarea
-              className="textarea"
-              placeholder="Your message"
-            ></textarea>
-            <button className="btn btn-lg bg-accent hover:bg-secondary-hover w-full">
-              Send message
-            </button>
-          </form>
+          ) : (
+            <form
+              className="space-y-8 w-full max-w-[780px]"
+              ref={form}
+              onSubmit={sendEmail}
+            >
+              <div className="flex gap-8">
+                <input
+                  className="input"
+                  type="text"
+                  placeholder="Your name"
+                  name="name"
+                />
+                <input
+                  className="input"
+                  type="email"
+                  placeholder="Your email"
+                  name="email"
+                />
+              </div>
+              <input
+                className="input"
+                type="text"
+                placeholder="Subject"
+                name="subject"
+              />
+              <textarea
+                className="textarea"
+                placeholder="Your message"
+                name="message"
+              ></textarea>
+              <button className="btn btn-lg bg-accent hover:bg-secondary-hover w-full">
+                Send message
+              </button>
+            </form>
+          )}
         </div>
       </div>
     </section>

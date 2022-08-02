@@ -16,8 +16,9 @@ const Portfolio = () => {
   const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
     window.addEventListener("resize", () => {
-      return window.innerWidth < 640 ? setIsMobile(true) : setIsMobile(false);
+      return window.innerWidth < 768 ? setIsMobile(true) : setIsMobile(false);
     });
+    window.innerWidth < 768 ? setIsMobile(true) : setIsMobile(false);
   }, []);
   return (
     <>

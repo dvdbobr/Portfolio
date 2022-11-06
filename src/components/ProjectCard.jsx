@@ -21,21 +21,23 @@ const ProjectCard = ({ item }) => {
           <a
             className="w-[4rem] h-[4rem] rounded-full bg-black flex justify-center items-center"
             href={item.href}
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <AiOutlineEye />
           </a>
           <a
             className="w-[4rem] h-[4rem] rounded-full bg-black flex justify-center items-center"
             href={item.github}
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <FiGithub />
           </a>
         </div>
       </div>
       <h3 className="capitalize text-accent text-xl mb-3">{item.name}</h3>
-      <p className="text-white max-w-md">
-        {item.description}
-      </p>
+      <p className="text-white max-w-md">{item.description}</p>
     </div>
   );
 };
